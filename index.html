@@ -1,0 +1,47 @@
+<!doctype html>
+<htm lang='en'>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>meme generator</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='main.js'></script>
+  </head>
+
+  <body>
+    <div class='page'>
+      <h1>meme generator</h1>
+      <h3>fill out the form to create stuff</h3>
+      <form action='#' id='mform'>
+        <div>
+          <label for='imageurl'>image url</label>
+          <input type='text' id='imageurl' required>
+        </div>
+        <div>
+          <label for='toptext'>text on top</label>
+          <input type='text' id='toptext' required>
+        </div>
+        <div>
+          <label for='bottomtext'>text at bottom</label>
+          <input type='text' id='bottomtext' required>
+        </div>
+        <div>
+          <input type='submit' value='click'>
+        </div>
+      </form>
+
+      <!-- image area -->
+      <ul id='viewlist'>
+        <!-- example image -->
+        <li class="viewparent">
+          <div class="view">
+            <img src="http://lorempixel.com/200/200" alt="http://lorempixel.com/200/200">
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  </html>

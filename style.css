@@ -1,0 +1,58 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.viewparent:hover{
+  opacity: .5;
+  background-color: grey;
+}
+
+.viewparent:hover .view:after{
+  content: "\00d7"; /* &times; */
+
+  font-size: 2rem;
+  width: 20%;
+  height: 20%;
+
+  /* positioning */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* color: sandybrown; */
+  background-color: sandybrown;
+}
+
+#viewlist{
+  /* width: 100%; */
+  /* display: flex; */
+  display: inline-block;
+  text-align: center;
+}
+
+.view{
+  position: relative;
+  display: inline-block;
+  background-color: #C1FFDB;
+}
+
+.top {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center in block */
+
+  background-color: seagreen;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #D8F5FF;
+}
