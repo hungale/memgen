@@ -5,6 +5,8 @@
     <meta charset='utf-8'>
     <title>meme generator</title>
     <link rel='stylesheet' href='style.css'>
+    <!-- <link rel="shortcut icon" href="#"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
     <script src='main.js'></script>
   </head>
 
@@ -13,20 +15,20 @@
       <h1>meme generator</h1>
       <h3>fill out the form to create stuff</h3>
       <form action='#' id='mform'>
-        <div>
+        <div class='minput'>
           <label for='imageurl'>image url</label>
           <input type='text' id='imageurl' required>
         </div>
-        <div>
+        <div class='minput'>
           <label for='toptext'>text on top</label>
           <input type='text' id='toptext' required>
         </div>
-        <div>
+        <div class='minput'>
           <label for='bottomtext'>text at bottom</label>
           <input type='text' id='bottomtext' required>
         </div>
-        <div>
-          <input type='submit' value='click'>
+        <div id='mbutton'>
+          <input type='submit' value='add image' >
         </div>
       </form>
 

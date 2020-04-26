@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 });
 
 function addView(){
-  // let img = imageurl.value;
-  let img ='http://lorempixel.com/200/200';
+  let img = imageurl.value;
+  // let img ='http://lorempixel.com/200/200';
   let topval = toptext.value;
   let bottomval = bottomtext.value;
   let li = document.createElement('li');
@@ -36,6 +36,6 @@ function addView(){
     console.log(el.target, "was clicked, parentElement is:", el.target.parentElement);
     // removes only if you click the 'X'
     if(el.target.parentElement.className === 'viewparent')
-      view.removeChild(el.target.parentElement);
+      viewlist.removeChild(el.target.parentElement);
   });
 }
