@@ -5,8 +5,7 @@
     <meta charset='utf-8'>
     <title>meme generator</title>
     <link rel='stylesheet' href='style.css'>
-    <!-- <link rel="shortcut icon" href="#"/> -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Ubuntu&display=swap" rel="stylesheet"> 
     <script src='main.js'></script>
   </head>
 
@@ -14,6 +13,7 @@
     <div class='page'>
       <h1>meme generator</h1>
       <h3>fill out the form to create stuff</h3>
+      
       <form action='#' id='mform'>
         <div class='minput'>
           <label for='imageurl'>image url</label>
@@ -28,20 +28,13 @@
           <input type='text' id='bottomtext' required>
         </div>
         <div id='mbutton'>
-          <input type='submit' value='add image' >
+          <input type='submit' value='add image'>
         </div>
       </form>
 
       <!-- image area -->
       <ul id='viewlist'>
-        <!-- example image -->
-        <li class="viewparent">
-          <div class="view">
-            <img src="http://lorempixel.com/200/200" alt="http://lorempixel.com/200/200">
-            <div class="top">top</div>
-            <div class="bottom">bottom</div>
-          </div>
-        </li>
+        <!-- images go here -->
       </ul>
     </div>
   </body>
